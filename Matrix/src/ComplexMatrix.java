@@ -23,7 +23,7 @@ public class ComplexMatrix extends Matrix {
     }
 
     // Method 
-    // Add two matrix
+    // Add two complex matrix
     public static ComplexMatrix add(ComplexMatrix a, ComplexMatrix b) {
         ComplexMatrix c = new ComplexMatrix();
         for (int i = 0; i < a.SIZE; i++) {
@@ -34,7 +34,7 @@ public class ComplexMatrix extends Matrix {
         return c;
     }
 
-    // Substract two matrix
+    // Substract two complex matrix
     public static ComplexMatrix substract(ComplexMatrix a, ComplexMatrix b) {
         ComplexMatrix c = new ComplexMatrix();
         for (int i = 0; i < a.SIZE; i++) {
@@ -45,8 +45,7 @@ public class ComplexMatrix extends Matrix {
         return c;
     }
 
-    // Multiply two metrix
-
+    // Multiply two complex metrix
     public static ComplexMatrix multiplication(ComplexMatrix a, ComplexMatrix b) {
         ComplexMatrix c = new ComplexMatrix();
         for (int i = 0; i < a.SIZE; i++) {

@@ -18,7 +18,10 @@ public class Matrix {
     }
 
     // Method
+    
     // Input matrix's member at index i,j
+    // i and j are integer for position m,n in matrix
+    // val is an integer for a matrix's member at i,j
     public void setMemberAt(int i, int j, int val) {
         this.member[i][j] = val;
     }
@@ -26,6 +29,7 @@ public class Matrix {
     // Input all matrix's member
     public void inputAllMember() {
         Scanner sn = new Scanner(System.in);
+        System.out.println("Enter value for matrix's member < "+SIZE+"*"+SIZE+" >");
         for (int i = 0; i < this.SIZE; i++) {
             for (int j = 0; j < this.SIZE; j++) {
                 this.member[i][j] = sn.nextInt();
